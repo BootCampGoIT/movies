@@ -1,15 +1,23 @@
 import React from "react";
 import { mainRoutes } from "../../routes/mainRoutes";
-import { NavLink } from "react-router-dom";
-const Header = () => {
+import { NavLink, withRouter } from "react-router-dom";
+
+const Header = ({ location }) => {
   return (
     <nav>
       <ul>
         {mainRoutes.map(
           ({ name, exact, path, isLink }) =>
             isLink && (
-              <li>
-                <NavLink to={path} exact={exact}>
+              <li key={path}>
+                <NavLink
+                  to={{
+                    pathname: path,
+                    state: {
+                      from: location.pathname,
+                    },
+                  }}
+                  exact={exact}>
                   {name}
                 </NavLink>
               </li>
@@ -20,4 +28,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default withRouter(Header);

@@ -6,7 +6,7 @@ const Content = () => {
   return (
     <div>
       {mainRoutes.map(({ path, exact, component }) => (
-        <Route path={path} exact={exact} component={component} />
+        <Route path={path} exact={exact} component={component}  key={path}/>
       ))}
     </div>
   );

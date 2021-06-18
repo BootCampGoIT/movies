@@ -6,29 +6,18 @@ const HomePage = ({ location }) => {
     <div style={{ display: "flex", flexDirection: "column" }}>
       <h2>Home</h2>
       <Link
-        to={{ pathname: "/moviesDetails", state: { from: location.pathname } }}>
+        to={{ pathname: "/moviesDetails/f43g23g2f3ff2th", state: { from: location.pathname } }}>
         go to moviesDetails
       </Link>
       <Link
-        to={{ pathname: "/moviesDetails", state: { from: location.pathname } }}>
+        to={{ pathname: "/moviesDetails/243gj24jgh2gfjfj23", state: { from: location.pathname } }}>
         go to moviesDetails
       </Link>
       <Link
-        to={{ pathname: "/moviesDetails", state: { from: location.pathname } }}>
+        to={{ pathname: "/moviesDetails/fsdf68767fdsfs", state: { from: location.pathname } }}>
         go to moviesDetails
       </Link>
-      <Link
-        to={{ pathname: "/moviesDetails", state: { from: location.pathname } }}>
-        go to moviesDetails
-      </Link>
-      <Link
-        to={{ pathname: "/moviesDetails", state: { from: location.pathname } }}>
-        go to moviesDetails
-      </Link>
-      <Link
-        to={{ pathname: "/moviesDetails", state: { from: location.pathname } }}>
-        go to moviesDetails
-      </Link>
+      
     </div>
   );
 };

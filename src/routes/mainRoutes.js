@@ -19,7 +19,7 @@ export const mainRoutes = [
   },
   {
     name: "MoviesDetailsPage",
-    path: "/moviesDetails",
+    path: "/moviesdetails/:movieID",
     exact: false,
     component: MovieDetailsPage,
     isLink: false,
